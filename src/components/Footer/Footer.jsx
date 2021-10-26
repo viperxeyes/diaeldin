@@ -19,7 +19,7 @@ export default function Footer() {
       >
         <p>{footerText}</p>
       </div>
-      <button className="text-white border-solid border-2 rounded-lg border-blue-500 hover:bg-blue-500 hover:bg-opacity-30  transition-all duration-300 ease-in-out ">
+      <button className="text-white border-solid border rounded-md border-blue-500 hover:bg-blue-500 hover:bg-opacity-30  transition-all duration-300 ease-in-out ">
         <div className="px-8 py-4 w-auto">Say Hello</div>
       </button>
 

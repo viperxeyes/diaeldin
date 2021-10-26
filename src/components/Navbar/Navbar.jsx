@@ -1,24 +1,17 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+
 import NavItem from "./NavItem";
 import NavItemGroup from "./NavItemGroup";
-import { GrMenu } from "react-icons/gr";
 import { FaTh } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
-export default function Navbar() {
-  const [active, setActive] = useState(false);
-  const onClick = () => {
-    setActive(!active);
-  };
+export default function Navbar({ onClick, active }) {
   return (
-    <div
-      className={` ${
-        active && "dark"
-      } text-white font-mono text-sm mx-auto h-16 flex items-center justify-between p-5 sm:px-12`}
-    >
-      <div className="w-14">Logo</div>
-      <button className="lg:hidden z-30  border-dashed  " onClick={onClick}>
+    <nav className="w-auto">
+      <button
+        className="lg:hidden z-30  relative border-dashed  "
+        onClick={onClick}
+      >
         {!active ? (
           <FaTh
             size={30}
@@ -34,28 +27,17 @@ export default function Navbar() {
         )}
       </button>
 
-      <nav
-        className={`${
-          !active &&
-          "bg-gray-850 transform translate-x-full lg:transform-none lg:translate-x-0 "
-        } 
-         fixed bg-gray-850  
-         w-2/3  top-0 h-screen lg:h-full
-          right-0 flex justify-center lg:bg-transparent
-          lg:static lg:w-auto lg:flex  
-          transform transition-transform  duration-100 ease-linear
-      `}
-      >
-        <NavItemGroup>
-          <NavItem title="About" />
-          <NavItem title="Projects" />
-          <NavItem title="Experience" />
-          <NavItem title="Contact" />
-          <button className="mt-2 border-solid border-2 rounded-lg border-blue-500 hover:bg-gray-700 lg:hover:bg-gray-800 transition-all duration-300 ease-in-out hover:border-transparent">
-            <div className="p-2 w-20">Resume</div>
-          </button>
-        </NavItemGroup>
-      </nav>
-    </div>
+      <NavItemGroup active={active}>
+        <NavItem title="About" number={"01."} />
+        <NavItem title="Experience" number={"02."} />
+        <NavItem title="Projects" number={"03."} />
+        <NavItem title="Contact" number={"04."} />
+        <button className="text-white border-solid border rounded-md border-blue-500 hover:bg-blue-500 hover:bg-opacity-30  transition-all duration-300 ease-in-out">
+          <div className="lg:p-2 lg:w-24  px-6 py-4 w-36 transition-all transform duration-150 ease-in-out">
+            Resume
+          </div>
+        </button>
+      </NavItemGroup>
+    </nav>
   );
 }

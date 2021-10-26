@@ -1,19 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function NavItem({ title }) {
+export default function NavItem({ title, number }) {
   return (
-    <li className="list-none pb-10 md:pb-0  ">
+    <li>
       <Link
         //className="flex w-full text-base uppercase hover:text-red-600 cursor-pointer pt-2.5 px-2.5"
-        className="flex  flex-col md:flex-row w-full justify-center items-center text-base  cursor-pointer  mr-5 pt-2 px-2 hover:text-blue-400 "
+        className="  flex  flex-col md:flex-row w-full justify-center items-center   cursor-pointer  mr-5 text-xl lg:text-sm  "
         to="#"
       >
-        <i className="mr-1 text-blue-400 invisible md:visible">.</i>
-        <i>
+        <span className=" text-blue-400  ">{number}</span>
+        <span className=" text-gray-400 hover:text-blue-400 ">
           {title}
-          <i className="ml-1 text-blue-400">.()</i>
-        </i>
+          <span className="text-blue-400 ">.()</span>
+        </span>
       </Link>
     </li>
   );
