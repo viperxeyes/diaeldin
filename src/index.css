@@ -12,4 +12,24 @@
     font-weight: 500;
     src: url(./fonts/SFMono/SFMono-Medium.woff) format("woff");
   }
+  @font-face {
+    font-family: SFMono;
+    font-weight: 600;
+    src: url(./fonts/SFMono/SFMono-Semibold.woff) format("woff");
+  }
+  @font-face {
+    font-family: Calibre;
+    font-weight: 400;
+    src: url(./fonts/Calibre/Calibre-Regular.woff) format("woff");
+  }
+  @font-face {
+    font-family: Calibre;
+    font-weight: 500;
+    src: url(./fonts/Calibre/Calibre-Medium.woff) format("woff");
+  }
+  @font-face {
+    font-family: Calibre;
+    font-weight: 600;
+    src: url(./fonts/Calibre/Calibre-Semibold.woff) format("woff");
+  }
 }

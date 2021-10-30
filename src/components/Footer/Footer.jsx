@@ -6,7 +6,7 @@ import { IconContext } from "react-icons/lib";
 
 export default function Footer() {
   return (
-    <section className="   flex flex-1 flex-col  min-h-full justify-start items-center  max-w-md sm:max-w-full px-5 lg:px-48">
+    <section className="   flex  flex-col  min-h-screen justify-start items-center  max-w-md sm:max-w-full px-5 lg:px-48">
       <div className="text-blue-500 font-mono w-full flex justify-center  pb-5 ">
         <h2>.What's Next.()</h2>
       </div>

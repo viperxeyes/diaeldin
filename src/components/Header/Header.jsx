@@ -10,7 +10,6 @@ export default function Header({ scrollValue, oldScrollValue }) {
     setActive(!active);
     if (!active) {
       container.classList.remove("scrollbar-thin");
-      console.log(container);
     } else {
       container.classList.add("scrollbar-thin");
     }
@@ -26,7 +25,7 @@ export default function Header({ scrollValue, oldScrollValue }) {
           : oldScrollValue > scrollValue
           ? "translate-y-0"
           : null
-      } fixed font-mono flex w-full top-0 h-20  shadow-lg bg-gray-900  justify-between items-center px-4 lg:px-12 transition transform duration-300 ease-in-out`}
+      } fixed px-4 md:px-12  flex w-full top-0 h-20 z-50 shadow-lg  font-SFMono md:text-xs bg-gray-900 bg-opacity-80 backdrop-filter backdrop-blur-md justify-between items-center  transition transform duration-300 ease-in-out`}
     >
       <a href="#" className="hover:fill-current text-blue-400 text-opacity-10">
         <Logo />

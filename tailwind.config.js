@@ -1,8 +1,17 @@
 // tailwind.config.js
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  mode: "jit",
+  purge: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html",
+    "./src/components/*.{js,jsx}",
+  ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      Calibre: ["Calibre"],
+      SFMono: ["SFMono"],
+    },
     extend: {
       colors: {
         gray: {
