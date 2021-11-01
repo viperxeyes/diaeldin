@@ -5,7 +5,7 @@ import NavItemGroup from "./NavItemGroup";
 import { FaTh } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
-export default function Navbar({ onClick, active }) {
+export default function Navbar({ onClick, active, setActive }) {
   return (
     <nav className="w-auto">
       <button
@@ -28,10 +28,34 @@ export default function Navbar({ onClick, active }) {
       </button>
 
       <NavItemGroup active={active}>
-        <NavItem title="About" number={"01."} />
-        <NavItem title="Experience" number={"02."} />
-        <NavItem title="Projects" number={"03."} />
-        <NavItem title="Contact" number={"04."} />
+        <NavItem
+          title="About"
+          number={"01."}
+          section="about"
+          active={active}
+          setActive={setActive}
+        />
+        <NavItem
+          title="Experience"
+          number={"02."}
+          section="experience"
+          active={active}
+          setActive={setActive}
+        />
+        <NavItem
+          title="Projects"
+          number={"03."}
+          section="projects"
+          active={active}
+          setActive={setActive}
+        />
+        <NavItem
+          title="Contact"
+          number={"04."}
+          section="contact"
+          active={active}
+          setActive={setActive}
+        />
         <button className="text-white border-solid border rounded-md border-blue-500 hover:bg-blue-500 hover:bg-opacity-30  transition-all duration-300 ease-in-out">
           <div className="md:p-3 md:w-20  px-6 py-4 w-36 transition-all transform duration-150 ease-in-out">
             Resume

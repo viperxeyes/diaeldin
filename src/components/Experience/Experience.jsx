@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { jobs } from "../../constants/constants";
 import SectionHead from "../Utilities/SectionHead";
 
@@ -10,7 +10,10 @@ export default function Experience() {
   };
 
   return (
-    <div className="  max-w-[700px] py-16 md:py-20 lg:py-24 mx-auto min-h-screen ">
+    <div
+      id="experience"
+      className="  max-w-[700px] py-16 md:py-20 lg:py-24 mx-auto  min-h-screen "
+    >
       <SectionHead Title="Where I've Worked" Number="02" />
 
       <div className="flex flex-col md:flex-row  ">
@@ -49,7 +52,7 @@ export default function Experience() {
             }}
           ></div>
         </div>
-        <div className="relative ml-5  flex flex-col flex-1 antialiased ">
+        <div className="ml-5 ">
           {jobs.map((job, i) => {
             return (
               <div

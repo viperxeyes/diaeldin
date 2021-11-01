@@ -20,21 +20,22 @@ export default function Layout() {
   return (
     <div
       id="ScrollableContainer"
-      className="absolute grid grid-cols-1 grid-rows-1 bg-gray-900 overflow-hidden font-SFMono    w-full h-full  z-30 scrollbar-thumb-gray-600 scrollbar-track-gray-850 scrollbar-thin   scrollbar-thumb-rounded-md scrollbar-track-rounded-md  "
+      className="absolute grid grid-cols-1  bg-gray-900 overflow-hidden font-SFMono    w-full h-full  z-30 scrollbar-thumb-gray-600 scrollbar-track-gray-850 scrollbar-thin   scrollbar-thumb-rounded-md scrollbar-track-rounded-md  "
       onScroll={(e) => {
         scrolling(e);
       }}
     >
       <Header scrollValue={scrollValue} oldScrollValue={oldScrollValue} />
       <SideBanners />
-      <main className="text-gray-400 xl:px-36 md:px-24 sm:px-10 px-6 mx-auto w-full      ">
+      <main
+        id="main"
+        className="text-gray-400 xl:px-36 md:px-24 sm:px-10 px-6 mx-auto w-full       "
+      >
         <Hero />
         <About />
         <Experience />
         <Projects />
       </main>
-
-      <Footer />
     </div>
   );
 }

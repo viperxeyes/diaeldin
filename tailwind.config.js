@@ -22,12 +22,16 @@ module.exports = {
           600: "#424549",
         },
       },
+      backgroundImage: {
+        discordClone: "url('./images/discordClone.png')",
+      },
     },
   },
   variants: {
     extend: {},
     scrollbar: ["rounded"],
     fill: ["hover", "focus"],
+    direction: ["even", "odd"],
   },
   plugins: [require("tailwind-scrollbar")],
 };

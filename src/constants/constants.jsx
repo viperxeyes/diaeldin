@@ -51,7 +51,7 @@ const jobs = [
   },
   {
     id: 4,
-    company: "Mobinil",
+    company: "Orange",
     title: "Customer Service Agent",
     startDate: "July 2007",
     endDate: "May 2009",

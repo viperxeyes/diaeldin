@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHtml5 } from "react-icons/fa";
+
 import Me from "../../images/Me.jpeg";
 import {
   Arduino,
@@ -24,7 +24,10 @@ import TextHover from "../Utilities/TextHover";
 
 export default function About() {
   return (
-    <div className="  max-w-[900px] py-16 md:py-20 lg:py-24 mx-auto min-h-screen">
+    <div
+      id="about"
+      className="  max-w-[900px] py-16 md:py-20 lg:py-24 mx-auto min-h-screen"
+    >
       <SectionHead Title="About Me" Number="01" />
 
       <div className="grid  grid-cols-1 md:grid-cols-2  gap-4    font-Calibre text-lg">
