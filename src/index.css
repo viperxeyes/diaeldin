@@ -4,6 +4,10 @@
 .rtl {
   direction: rtl;
 }
+
+.ltr {
+  direction: ltr;
+}
 @layer base {
   @font-face {
     font-family: SFMono;
