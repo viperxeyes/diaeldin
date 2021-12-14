@@ -3,7 +3,9 @@ import React from "react";
 export default function Hero() {
   return (
     <div className=" flex flex-col min-h-screen  mx-auto max-w-[1000px] justify-center items-start space-y-5 ">
-      <h2 className="text-blue-500 font-SFMono text-lg ">Hi, my name is</h2>
+      <h2 className="text-blue-500 font-SFMono text-lg transition-opacity opacity-5 ">
+        Hi, my name is
+      </h2>
       <h2 className="text-gray-300  font-Calibre font-semibold   text-4xl md:text-7xl sm:text-5xl">
         Dia Eldin Attia.
       </h2>

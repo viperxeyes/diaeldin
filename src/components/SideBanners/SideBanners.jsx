@@ -6,7 +6,7 @@ export default function SideBanners() {
   return (
     <>
       <div className="  text-gray-400 font-thin font-SFMono fixed bottom-0 right-14  flex flex-col justify-center items-center invisible lg:visible">
-        <div className="transform -rotate-90 w-0">
+        <div className="transform -rotate-90 w-0 hover:text-blue-500  text-gray-400 transition-all duration-300 ease-in-out cursor-pointer ">
           serpent_eyesus@hotmail.com
         </div>
         <div className=" border-l  h-28 border-gray-400"></div>
@@ -14,7 +14,8 @@ export default function SideBanners() {
       <div className="flex  ">
         <IconContext.Provider
           value={{
-            className: "hover:text-blue-500 mb-4 text-gray-400 ",
+            className:
+              "hover:text-blue-500 mb-4 text-gray-400 transition-all duration-300 ease-in-out cursor-pointer ",
             size: 20,
           }}
         >
